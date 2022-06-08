@@ -1,0 +1,39 @@
+
+schema {
+    query:Query
+    mutation:Mutation
+    subscription:Subscription
+}
+
+type Query {
+    getStudentInfo(id:ID!):Student!
+    getStudentCourseInfo(id:ID!):[Course!]
+}
+
+type Mutation {
+    createStudent(studentId:Int, firstName:String, lastName:String, address:String, contactNumber:String, courses:Course)
+    createCourse(name:String, description:String, textbook:String, dept:Int, professor:Int, location:Int)
+}
+
+
+
+type Student {
+    studentId: Int
+    firstName: String
+    lastName: String
+    address: String
+    contactNumber: String
+    courses: [Course]
+}
+
+type Course {
+    name: String
+    description: String
+    textbook: String
+    dept: Int
+    professor: Int
+    location: Int
+}
+
+
+
