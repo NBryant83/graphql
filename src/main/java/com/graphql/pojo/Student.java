@@ -1,15 +1,15 @@
 package com.graphql.pojo;
 
-import lombok.Data;
+import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.util.ArrayList;
+import javax.persistence.*;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
 @Entity
-@Data
+@Table
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
