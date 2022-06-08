@@ -1,4 +1,5 @@
-
+server:
+  port: 8090
 spring:
   datasource:
     driverClassName: org.h2.Driver
@@ -6,7 +7,10 @@ spring:
     username: sa
     password:
   jpa:
-    database-plarform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
   h2:
     console:
       enabled: true
