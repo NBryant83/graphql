@@ -1,6 +1,6 @@
 package com.graphql.repository;
 
-import com.graphql.pojo.Student;
+import com.graphql.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

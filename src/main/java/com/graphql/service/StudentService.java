@@ -1,7 +1,7 @@
 package com.graphql.service;
 
 
-import com.graphql.pojo.Student;
+import com.graphql.model.Student;
 import com.graphql.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
