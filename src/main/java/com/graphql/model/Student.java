@@ -1,8 +1,8 @@
-package com.graphql.pojo;
+package com.graphql.model;
 
 import lombok.*;
-
 import javax.persistence.*;
+
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -11,6 +11,10 @@ import javax.persistence.*;
 @Entity
 @Table
 public class Student {
+
+
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
